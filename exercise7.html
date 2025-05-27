@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="mn">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <style>
+
+    .container {
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      height: 100vh;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+    }
+
+
+
+    .box {
+
+      width: 100px;
+
+      height: 100px;
+
+      background-color: green;
+
+    }
+
+
+
+    @media (max-width: 700px) {
+
+      .container {
+
+        flex-direction: column;
+
+      }
+
+    }
+
+
+
+    @media (max-width: 400px) {
+
+      .box {
+
+        background-color: yellow;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="box"></div><div class="box"></div><div class="box"></div>
+
+  </div>
+
+</body>
+
+</html>
